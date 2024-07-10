@@ -8,7 +8,7 @@ const {
   GraphQLNonNull,
   GraphQLInt,
 } = require("graphql");
-const { poolConnect, pool } = require("./db");
+const { poolConnect, pool } = require("./config/db");
 
 const app = express();
 const port = 5050;
@@ -135,7 +135,7 @@ async function init() {
     connection.release();
 
     app.listen(port, () => {
-      console.log(`The server is running on port ${port}!!!`);
+      console.log(`The server is 44444444 on port ${port}!!!`);
     });
   } catch (err) {
     console.error("Error connecting to MySQL or running query:", err);
